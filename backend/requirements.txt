@@ -16,3 +16,8 @@ tqdm
 httpx
 python-magic
 python-multipart
+genai
+anthropic
+openai
+supabase
+ollama
