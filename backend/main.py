@@ -18,15 +18,15 @@ Base.metadata.create_all(bind=engine)
 
 # Add CORS
 origins = [
+    "https://smart-coding-assistant-1.onrender.com",
     "http://localhost:3000",  # React frontend
     "http://127.0.0.1:3000",
-    "https://smart-coding-assistant-1.onrender.com",
     # Add more allowed origins if needed
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,        # List of allowed origins
+    allow_origins=["*"],        # List of allowed origins
     allow_credentials=True,
     allow_methods=["*"],          # Allow GET, POST, PUT, DELETE etc.
     allow_headers=["*"],          # Allow all headers

@@ -6,6 +6,7 @@ from google.genai.types import Content, Part
 from openai import OpenAI
 import anthropic
 from dotenv import load_dotenv
+from ollama import Client
 import os
 
 
@@ -38,6 +39,7 @@ class LLMFactory:
         Use local Ollama server to generate response
         """
         try:
+            client = Client()
             response = requests.post(
                 "http://localhost:11434/api/chat",
                 json={"model": "llama3", "messages": messages, "stream": True},
