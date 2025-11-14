@@ -1,5 +1,5 @@
 fastapi
-uvicorn 
+uvicorn
 python-dotenv
 requests
 sqlalchemy
@@ -10,15 +10,15 @@ asyncpg
 pydantic[email]
 psycopg2-binary
 gitpython
-sentence-transformers
-faiss-cpu
+sentence-transformers==2.2.2
+faiss-cpu==1.7.4
 tqdm
 httpx
 python-magic
 python-multipart
 genai
 anthropic
-openai
+openai==1.40.0
 supabase
 ollama
-tiktoken==0.7.0
+tiktoken==0.6.0
