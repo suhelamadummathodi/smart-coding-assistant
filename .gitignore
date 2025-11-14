@@ -1,0 +1,6 @@
+/frontend/node_modules
+/backend/data
+/backend/env
+/backend/.env
+/backend/tmp_uploads
+/frontend/build

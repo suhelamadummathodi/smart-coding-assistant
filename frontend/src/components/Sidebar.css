@@ -1,0 +1,84 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.chats {
+  flex-grow: 1;
+  overflow-y: auto; /* scrollable chat list */
+}
+
+.user-info {
+  border-top: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+}
+
+.chat-item {
+  position: relative;
+  transition: background 0.2s;
+}
+
+.chat-item:hover {
+  background: #f8f9fa;
+}
+
+.chat-menu-icon {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.chat-item:hover .chat-menu-icon {
+  opacity: 1;
+}
+
+.chat-dropdown {
+  top: 20px;
+  right: 0;
+  z-index: 100;
+  min-width: 100px;
+}
+
+.chat-dropdown .dropdown-item:hover {
+  background: #f1f1f1;
+}
+
+.active-chat {
+  background-color: #e8f0fe !important;
+  font-weight: 500;
+}
+
+/* Cover entire viewport with semi-transparent background */
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* very high so it sits above sidebar/content */
+}
+
+/* Modal box itself */
+.project-modal {
+  width: 400px;
+  max-width: 90%;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  z-index: 10000;
+}
+
+.active-project {
+  background-color: #e8f0fe !important;
+  font-weight: 600;
+}
+

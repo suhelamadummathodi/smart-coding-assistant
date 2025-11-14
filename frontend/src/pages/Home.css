@@ -1,0 +1,15 @@
+.home-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  margin-left: 250px; /* match sidebar width */
+  padding: 20px;
+  width: calc(100% - 250px);
+  display:flex;
+  flex-direction: column;
+  height: 100%; /* so it fills the viewport */
+  box-sizing: border-box;
+}
+
