@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api", // backend base URL
+  baseURL: "https://smart-coding-assistant.onrender.com/api", // backend base URL
 });
 
 // Add JWT token automatically if user is logged in
