@@ -16,7 +16,7 @@ tqdm
 httpx
 python-magic
 python-multipart
-genai
+google-genai
 anthropic
 openai
 supabase
