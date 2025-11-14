@@ -21,3 +21,4 @@ anthropic
 openai
 supabase
 ollama
+tiktoken==0.7.0
